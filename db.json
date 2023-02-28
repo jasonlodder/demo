@@ -1,14 +1,91 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+		"id": 2,
+		"state": {
+			"current_status": "open",
+			"next_event": "sunset",
+			"online": true,
+			"live": true,
+			"current_position": 10,
+			"max_position": 100,
+			"min_position": 0
+		},
+		"info": {
+			"build_version": "0.0.1",
+			"signal_strength": -39,
+			"uptime": 17985,
+			"MAC_address": "c049efcf2484",
+			"type": "blind",
+			"name": "blind",
+			"area": {
+				"room": "bedroom",
+				"zone": "",
+				"group": ""
+			},
+			"automation": ""
+		},
+		"function": {
+			"error_logs": {},
+			"shutdown": "function",
+			"reboot": "function"
+		},
+		"automation": {
+			"type": {
+				"schedule": {
+					"day/night": {
+						"option": [
+							"sunrise",
+							"sunset"
+						],
+						"delay": 17985,
+						"repeat": {
+							"frequency": {
+								"once": false,
+								"multiple": {
+									"days": {
+										"monday": true,
+										"tuesday": true,
+										"wednesday": true,
+										"thursday": true,
+										"friday": true,
+										"saturday": false,
+										"sunday": false
+									},
+									"repeat": [
+										"weekly",
+										"biweekly"
+									]
+								}
+							}
+						}
+					},
+					"time": {
+						"set_time": 17985,
+						"randomize": 17985,
+						"repeat": {
+							"frequency": {
+								"once": false,
+								"multiple": {
+									"days": {
+										"monday": true,
+										"tuesday": true,
+										"wednesday": true,
+										"thursday": true,
+										"friday": true,
+										"saturday": false,
+										"sunday": false
+									},
+									"repeat_frequency": [
+										"weekly",
+										"biweekly"
+									]
+								}
+							}
+						}
+					},
+					"external": {},
+					"device_state": {},
+					"group_state": {}
+				}
+			}
+		}
+	}
